@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for file in *.tst
+do
+    echo "Logic gate test script: $file"
+
+    # run the hardware sumulator whereever it is kept (edit if necessary):
+    ../../tools/HardwareSimulator.sh $file
+done
+
